@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/* --------------- CSS For Navigation Bar --------------- */
+img {
+  cursor: pointer;
+}
+
+.flex-div {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  padding: 10px 2%;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background: #1e0558;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-left {
+  width: 130px;
+  color: #ccc;
+}
+
+.nav-middle .search-box {
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  border-radius: 25px;
+  padding: 8px 12px;
+}
+
+.nav-middle .search-box input {
+  width: 250px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #ccc;
+  font-size: 15px;
+}
+
+.nav-middle .search-box img {
+  width: 15px;
+}
+
+.nav-right a {
+  padding: 10px;
+  display: block;
+  text-align: center;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.nav-right a:hover {
+  background-color: blueviolet;
+}
+
+/* --------------- CSS For Automatic Slideshow --------------- */
+
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 10%;
+  text-align: center;
+}
+
+.text h1 {
+  font-size: 40px;
+  text-align: left;
+  margin-left: 10%;
+  margin-bottom: 20px;
+  font-weight: 750;
+}
+
+.txt {
+  font-size: 20px;
+  text-align: left;
+  margin-left: 10%;
+  font-weight: 500;
+}
+
+.text .btn button {
+  border: none;
+  color: white;
+  background: #1e0558;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
+
+/* --------------- CSS For Services --------------- */
+
+.service p {
+  text-align: center;
+  font-size: 28px;
+  line-height: 20px;
+  font-weight: 700;
+  margin: 50px;
+  padding-bottom: 10px;
+  position: relative;
+  text-transform: capitalize;
+}
+
+/* --------------- CSS For Services --------------- */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 30px;
+  gap: 20px;
+}
+
+.container .image1 img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.txt2 h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.txt2 p {
+  font-size: 1em;
+  line-height: 32px;
+}

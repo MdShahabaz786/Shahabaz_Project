@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>E Service</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="index.js" />
+  </head>
+  <body>
+    <!---------- HTML For Navigation Bar ---------->
+
+    <nav class="flex-div">
+      <div class="nav-left flex-div">LOGO</div>
+      <div class="nav-middle flex-div">
+        <div class="search-box flex-div">
+          <input type="text" placeholder="Search" />
+          <img src="images/search.png" />
+        </div>
+      </div>
+      <div class="nav-right flex-div">
+        <a href="">HOME</a>
+        <a href="">SERVICES</a>
+        <a href="">ABOUT US</a>
+        <a href="">CONTACT</a>
+        <a href="">SIGN UP</a>
+        <a href="">SIGN IN</a>
+      </div>
+    </nav>
+
+    <!---------- HTML For Automatic Slideshow ---------->
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="images/city.png" style="width: 100%; height: 550px" />
+        <div class="text">
+          <h1>Repair your laptop <br />iphone & Computer.</h1>
+          <p class="txt">
+            As quas equidem noluisse et, ex pro semper fierent<br />
+            opore epic urei ullam corper usu eohs et voluptaria rationibus you
+          </p>
+          <div class="btn">
+            <a href=""><button type="button">Contact Us</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/donuts.png" style="width: 100%; height: 550px" />
+        <div class="text">
+          <h1>Repair your laptop <br />iphone & Computer.</h1>
+          <p class="txt">
+            As quas equidem noluisse et, ex pro semper fierent<br />
+            opore epic urei ullam corper usu eohs et voluptaria rationibus you
+          </p>
+          <div class="btn">
+            <a href=""><button type="button">Contact Us</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/images.jpg" style="width: 100%; height: 550px" />
+        <div class="text">
+          <h1>Repair your laptop <br />iphone & Computer.</h1>
+          <p class="txt">
+            As quas equidem noluisse et, ex pro semper fierent<br />
+            opore epic urei ullam corper usu eohs et voluptaria rationibus you
+          </p>
+          <div class="btn">
+            <a href=""><button type="button">Contact Us</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------- HTML For Services ---------->
+
+    <div class="service">
+      <p>Service we offers</p>
+    </div>
+
+    <!---------- HTML For Services Grid ---------->
+
+    <div class="container">
+      <div class="image1">
+        <img
+          src="https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt=""
+        />
+      </div>
+      <div class="txt2">
+        <h3>Mobile Service</h3>
+        <p>
+          It's soon going to be much easier to get your iPhone fixed. Apple said
+          early day that it was expanding its product ...
+        </p>
+      </div>
+      <div class="txt2">
+        <h3>Computer Service</h3>
+        <p>
+          It's soon going to be much easier to get your iPhone fixed. Apple said
+          early day that it was expanding its product ...
+        </p>
+      </div>
+      <div class="image1">
+        <img
+          src="https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt=""
+        />
+      </div>
+
+      <div class="image1">
+        <img
+          src="https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt=""
+        />
+      </div>
+      <div class="txt2">
+        <h3>Mobile Service</h3>
+        <p>
+          It's soon going to be much easier to get your iPhone fixed. Apple said
+          early day that it was expanding its product ...
+        </p>
+      </div>
+      <div class="txt2">
+        <h3>Computer Service</h3>
+        <p>
+          It's soon going to be much easier to get your iPhone fixed. Apple said
+          early day that it was expanding its product ...
+        </p>
+      </div>
+      <div class="image1">
+        <img
+          src="https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+
+  <!---------- JS Script For Automatic Slideshow ---------->
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+
+      setTimeout(showSlides, 5000); // Change image every 5 seconds
+    }
+  </script>
+</html>
